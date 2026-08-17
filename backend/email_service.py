@@ -7,7 +7,7 @@ def send_email(request: EmailRequest):
     "from": "email@arthurvartanyan.com",
     "to": "arthurva@uw.edu",
     "reply_to": request.email,
-    "subject": f"Contact form message from {request.name}",
+    "subject": f"Contact form message from {request.email}",
     "text": (
       f"Name: {request.name}\n"
       f"Email: {request.email}\n\n"
