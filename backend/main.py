@@ -1,11 +1,10 @@
-import resend
+import email_service
 import os
-import EmailRequest
+import resend
+from EmailRequest import EmailRequest
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-
-from backend import email_service
 
 load_dotenv()
 app = FastAPI()
@@ -18,9 +17,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+resend.api_key = os.getenv("RESEND_API_KEY")
+
 @app.post("/send-email")
 def send_email(request: EmailRequest):
     email_service.send_email(request)
 
-
-    return {"success": True}
+    return True

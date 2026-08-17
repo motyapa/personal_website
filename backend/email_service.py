@@ -1,13 +1,9 @@
 import resend
-import os
-
-from backend.EmailRequest import EmailRequest
-
-resend.api_key = os.getenv("RESEND_API_KEY")
+from EmailRequest import EmailRequest
 
 def send_email(request: EmailRequest):
   params = {
-    "from": "onboarding@resend.dev",
+    "from": "email@arthurvartanyan.com",
     "to": "arthurva@uw.edu",
     "reply_to": request.email,
     "subject": f"Contact form message from {request.name}",
