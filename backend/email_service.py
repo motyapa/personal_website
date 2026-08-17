@@ -2,6 +2,7 @@ import resend
 from EmailRequest import EmailRequest
 
 def send_email(request: EmailRequest):
+  print("Received send email request")
   params = {
     "from": "email@arthurvartanyan.com",
     "to": "arthurva@uw.edu",
@@ -15,3 +16,4 @@ def send_email(request: EmailRequest):
   }
 
   resend.Emails.send(params)
+  print("Sent email")
