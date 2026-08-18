@@ -4,7 +4,7 @@ export default function AboutPage() {
       <div className="page__inner">
         <p className="page__kicker reveal reveal--1">About</p>
         <h1 id="about-title" className="page__title reveal reveal--2">
-          Hello, my name is Arthur Vartanyan.
+          Hi! My name is Arthur Vartanyan.
         </h1>
         <div className="about__grid">
           <div className="about__copy reveal reveal--3">
@@ -28,11 +28,15 @@ export default function AboutPage() {
             </p>
           </div>
           <aside className="about__aside reveal reveal--4">
-            <h2 className="about__aside-title">Focus</h2>
+            <h2 className="about__aside-title">Interests</h2>
             <ul className="about__list">
-              <li>Backend Software Engineering</li>
-              <li>Music</li>
-              <li>Combat Sports</li>
+              <li>Singing</li>
+              <li>Saxophone</li>
+              <li>Music Production</li>
+              <li>Brazilian Jiu Jitsu</li>
+              <li>Kickboxing</li>
+              <li>Reading</li>
+              <li>Software Development</li>
             </ul>
             <h2 className="about__aside-title">Currently</h2>
             <p className="about__aside-text">

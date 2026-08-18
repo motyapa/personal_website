@@ -94,7 +94,7 @@ export default function ContactPage() {
           Let&apos;s talk.
         </h1>
         <p className="page__lede reveal reveal--3">
-          Say hello, ask a question, or share an idea.
+          If you want to reach out to me!
         </p>
 
         {sent ? (
@@ -175,7 +175,7 @@ export default function ContactPage() {
             Socials
           </h2>
           <p className="contact__socials-lede">
-            Prefer a direct link? Find me on these platforms.
+            You can also find me on these social media platforms!
           </p>
           <ItemGroup className="contact__socials-list">
             {SOCIALS.map((social) => (

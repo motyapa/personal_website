@@ -6,7 +6,7 @@ const EXPERIENCE = [
     role: "Senior Software Engineer",
     period: "May 2024 - Present",
     summary:
-      "Building and scaling backend systems for financial products.",
+      "Building backend systems for servicing, underwriting, and money transfers.",
     highlights: [
       "Drove cross-service data-enrichment efforts for inbound/outbound ACH/wire/exchange-network across intl/domestic transfers, " +
       "tracing data across several repositories and teams, validating data requirements across all of the transfer workflows.",
@@ -23,7 +23,7 @@ const EXPERIENCE = [
     role: "Software Engineer 2",
     period: "Dec 2021 - May 2024",
     summary:
-      "Developed backend services supporting travel and booking platforms.",
+      "Developed backend services to unify checkout experiences across Expedia's platforms (vrbo, booking, expedia).",
     highlights: [
       "Developed a Kotlin/Java eCommerce booking service (5,000+ users/day, $200K/day, 99.9% uptime) and led" +
       "migration of Hotels.com to the booking service; its reliability and extensibility drove adoption as the primary" +
@@ -35,7 +35,7 @@ const EXPERIENCE = [
     role: "Project Engineer",
     period: "April 2019 - Nov 2021",
     summary:
-      "Delivered full stack solutions as a contractor on internal tooling.",
+      "Created, maintained, and upgraded a full-stack internal website for minting 5x5 codes.",
     highlights: [
       "Developed a full-stack application using JavaScript, C#, and SQL to enable Microsoft Employees to efficiently" +
       "request new 5x5 gift card tokens, automating creation of over 50 million redeemable gift cards per month."
@@ -67,6 +67,17 @@ const PROJECTS = [
       "Configured DNS and custom domain configs"
     ],
     tags: ["React", "Vite", "Python", "FastAPI"],
+  },
+  {
+    title: "Music scale generator",
+    description:
+      "A website to generate various music exercises/scales. Note - initial request may be slow as it is hosted for free" +
+        "on render. https://scale-generator-frontend.onrender.com/",
+    highlights: [
+        "Cross-section between music theory and software development.",
+        "Researched various music-writing libraries and implemented backend logic for all scales."
+    ],
+    tags: ["React", "Vite", "Python", "FastAPI"]
   }
 ]
 
@@ -157,15 +168,6 @@ export default function ResumePortfolioPage() {
                 ))}
               </ul>
             </section>
-
-            <div className="resume-portfolio__cta">
-              <p className="resume-portfolio__cta-text">
-                Interested in working together or want a detailed resume?
-              </p>
-              <Button variant="outline" size="lg" disabled>
-                Download PDF (coming soon)
-              </Button>
-            </div>
           </aside>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function HomePage({ onNavigate }) {
       <div className="hero__content">
         <p className="hero__brand reveal reveal--1">Arthur Vartanyan</p>
         <p className="hero__lede reveal reveal--3">
-          A personal corner of the web for work, writing, music, ramblings, and getting in touch.
+          My own personal digital address.
         </p>
         <div className="hero__actions reveal reveal--4">
           <Button size="lg" onClick={() => onNavigate("about")}>
